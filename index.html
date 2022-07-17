@@ -1,2 +1,17 @@
-<script src="https:///cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" type="text/javascript"></script>
-<script src="generador.js" type="text/javascript"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejericios de matematicas</title>
+    <script src="https:///cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" type="text/javascript"></script>
+    <script src="generador.js" type="text/javascript"></script></head>
+    <link rel="stylesheet" href="index.css">
+<body>
+    <div class="flex place-content-center mt-11"><h1 class="text-2xl font-bold">Generador de ejercicios de matemáticas para niñ@s de 7/8 años</h1></div>
+    <div class="bg-slate-200 shadow-lg p-5 rounded-md mt-4 ml-11 mr-11" >Este generador produce hojas tamaño A4 con ejercicios de matemáticas, genera sumas y restas de tres cifras, y multiplicaciones del 1 al 10.<br>Los resultados son aleatorios, por lo que se pueden generar múltiples veces con resultados diferentes.</div>
+    <div class="flex place-content-center m-3"><input id="paginas" type="number" min="1" max="100" placeholder="Número de páginas" class="border-2 border-black rounded-md p-2 font-bold text-center w-1/2"></div>
+    <div class="flex place-content-center m-3"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-1/2" onclick="generador(parseInt(document.getElementById('paginas').value));">Generar</button></div>
+</body>
+</html>
