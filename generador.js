@@ -56,6 +56,6 @@ function generador(pages=1) {
         }
         doc.addPage()
     }
-    doc.deletePage(11)
+    doc.deletePage(pages+1)
     doc.save(`mates.pdf`);
 }
